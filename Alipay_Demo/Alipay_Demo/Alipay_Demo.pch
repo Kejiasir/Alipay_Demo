@@ -1,0 +1,28 @@
+//
+//  Alipay_Demo.pch
+//  Alipay_Demo
+//
+//  Created by Arvin on 15/12/15.
+//  Copyright © 2015年 Arvin. All rights reserved.
+//
+
+#ifndef Alipay_Demo_pch
+#define Alipay_Demo_pch
+
+#define YYButtonWidth 80
+#define YYButtonHeight 30
+#define YYUIScreenWidth [UIScreen mainScreen].bounds.size.width
+#define YYUIScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+  #define YYLog(...) NSLog(__VA_ARGS__)
+#else
+  #define YYLog(...)
+#endif
+
+#endif /* Alipay_Demo_pch */
